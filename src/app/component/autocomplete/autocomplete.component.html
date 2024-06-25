@@ -1,0 +1,12 @@
+<h3>Auto Complete</h3>
+
+<form class="example-form">
+  <mat-form-field class="example-full-width">
+    <input matInput [matAutocomplete]="auto" />
+  </mat-form-field>
+  <mat-autocomplete   autoActiveFirstOption #auto>
+    @for (color of colorArray; track $index) {
+      <mat-option [value]="color">{{color}}</mat-option>
+    }
+  </mat-autocomplete>
+</form>
