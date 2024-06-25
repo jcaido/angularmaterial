@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { InputComponent } from './input/input.component';
-import { MatInputModule } from '@angular/material/input'
+import { MaterialModule } from '../Material.Module';
 
 @NgModule({
   declarations: [
@@ -15,7 +15,7 @@ import { MatInputModule } from '@angular/material/input'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MatInputModule
+    MaterialModule
   ],
   providers: [
     provideAnimationsAsync()
