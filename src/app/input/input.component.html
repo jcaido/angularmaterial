@@ -9,7 +9,11 @@
   </mat-form-field>
 
   <mat-form-field class="example-full-width">
-    <mat-label>Leave a comment</mat-label>
-    <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+    <mat-label>Favorite food</mat-label>
+    <mat-select>
+      @for (food of foods; track food.value) {
+        <mat-option [value]="food.value">{{food.viewValue}}</mat-option>
+      }
+    </mat-select>
   </mat-form-field>
 </form>
