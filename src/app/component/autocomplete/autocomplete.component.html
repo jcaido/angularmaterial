@@ -5,8 +5,8 @@
     <input matInput [matAutocomplete]="auto" [formControl] = "formControl" />
   </mat-form-field>
   <mat-autocomplete   autoActiveFirstOption #auto>
-    @for (color of filterOptions | async; track $index) {
-      <mat-option [value]="color">{{color}}</mat-option>
+    @for (color of filterOptionList | async; track color.code) {
+      <mat-option [value]="color.code">{{color.code}} | {{color.name}}</mat-option>
     }
   </mat-autocomplete>
 </form>
