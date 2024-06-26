@@ -7,6 +7,7 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { InputComponent } from './input/input.component';
 import { MaterialModule } from '../Material.Module';
 import { AutocompleteComponent } from './component/autocomplete/autocomplete.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { AutocompleteComponent } from './component/autocomplete/autocomplete.com
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MaterialModule
+    MaterialModule,
+    ReactiveFormsModule
   ],
   providers: [
     provideAnimationsAsync()

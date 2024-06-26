@@ -2,10 +2,10 @@
 
 <form class="example-form">
   <mat-form-field class="example-full-width">
-    <input matInput [matAutocomplete]="auto" />
+    <input matInput [matAutocomplete]="auto" [formControl] = "formControl" />
   </mat-form-field>
   <mat-autocomplete   autoActiveFirstOption #auto>
-    @for (color of colorArray; track $index) {
+    @for (color of filterOptions | async; track $index) {
       <mat-option [value]="color">{{color}}</mat-option>
     }
   </mat-autocomplete>
