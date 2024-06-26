@@ -9,13 +9,15 @@ import { MaterialModule } from '../Material.Module';
 import { AutocompleteComponent } from './component/autocomplete/autocomplete.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { DatepickerComponent } from './component/datepicker/datepicker.component';
+import { DatepickerInLineComponent } from './component/datepicker-in-line/datepicker-in-line.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     InputComponent,
     AutocompleteComponent,
-    DatepickerComponent
+    DatepickerComponent,
+    DatepickerInLineComponent
   ],
   imports: [
     BrowserModule,
