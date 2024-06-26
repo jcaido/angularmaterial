@@ -8,12 +8,14 @@ import { InputComponent } from './input/input.component';
 import { MaterialModule } from '../Material.Module';
 import { AutocompleteComponent } from './component/autocomplete/autocomplete.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { DatepickerComponent } from './component/datepicker/datepicker.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     InputComponent,
-    AutocompleteComponent
+    AutocompleteComponent,
+    DatepickerComponent
   ],
   imports: [
     BrowserModule,
