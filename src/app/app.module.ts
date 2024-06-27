@@ -10,6 +10,8 @@ import { AutocompleteComponent } from './component/autocomplete/autocomplete.com
 import { ReactiveFormsModule } from '@angular/forms';
 import { DatepickerComponent } from './component/datepicker/datepicker.component';
 import { DatepickerInLineComponent } from './component/datepicker-in-line/datepicker-in-line.component';
+import { MenubarComponent } from './component/menubar/menubar.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { DatepickerInLineComponent } from './component/datepicker-in-line/datepi
     InputComponent,
     AutocompleteComponent,
     DatepickerComponent,
-    DatepickerInLineComponent
+    DatepickerInLineComponent,
+    MenubarComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
