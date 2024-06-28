@@ -4,10 +4,11 @@ import { AutocompleteComponent } from './component/autocomplete/autocomplete.com
 import { InputComponent } from './input/input.component';
 import { HomeComponent } from './home/home.component';
 import { DatepickerInLineComponent } from './component/datepicker-in-line/datepicker-in-line.component';
+import { CalendarComponent } from './component/calendar/calendar.component';
 
 const routes: Routes = [
   {path:'home', component: HomeComponent},
-  {path:'datepicker', component: DatepickerInLineComponent},
+  {path:'calendar', component: CalendarComponent},
   {path:'autocomplete', component: AutocompleteComponent},
   {path:'input', component: InputComponent}
 ];
