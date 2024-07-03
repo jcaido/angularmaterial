@@ -13,6 +13,7 @@ import { DatepickerInLineComponent } from './component/datepicker-in-line/datepi
 import { MenubarComponent } from './component/menubar/menubar.component';
 import { HomeComponent } from './home/home.component';
 import { CalendarComponent } from './component/calendar/calendar.component';
+import { CardComponent } from './component/card/card.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { CalendarComponent } from './component/calendar/calendar.component';
     DatepickerInLineComponent,
     MenubarComponent,
     HomeComponent,
-    CalendarComponent
+    CalendarComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
