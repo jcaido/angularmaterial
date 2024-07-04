@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrl: './slider.component.css'
 })
 export class SliderComponent {
-
+  selectedValue :number = 0;
 }

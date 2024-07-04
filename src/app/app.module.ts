@@ -7,7 +7,7 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { InputComponent } from './input/input.component';
 import { MaterialModule } from '../Material.Module';
 import { AutocompleteComponent } from './component/autocomplete/autocomplete.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DatepickerComponent } from './component/datepicker/datepicker.component';
 import { DatepickerInLineComponent } from './component/datepicker-in-line/datepicker-in-line.component';
 import { MenubarComponent } from './component/menubar/menubar.component';
@@ -33,7 +33,8 @@ import { SliderComponent } from './component/slider/slider.component';
     BrowserModule,
     AppRoutingModule,
     MaterialModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [
     provideAnimationsAsync()

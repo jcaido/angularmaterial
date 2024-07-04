@@ -6,13 +6,15 @@ import { HomeComponent } from './home/home.component';
 import { DatepickerInLineComponent } from './component/datepicker-in-line/datepicker-in-line.component';
 import { CalendarComponent } from './component/calendar/calendar.component';
 import { CardComponent } from './component/card/card.component';
+import { SliderComponent } from './component/slider/slider.component';
 
 const routes: Routes = [
   {path:'home', component: HomeComponent},
   {path:'calendar', component: CalendarComponent},
   {path:'autocomplete', component: AutocompleteComponent},
   {path:'input', component: InputComponent},
-  {path:'card', component: CardComponent}
+  {path:'card', component: CardComponent},
+  {path:'slider', component: SliderComponent}
 ];
 
 @NgModule({
