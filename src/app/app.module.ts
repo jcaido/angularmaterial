@@ -14,6 +14,7 @@ import { MenubarComponent } from './component/menubar/menubar.component';
 import { HomeComponent } from './home/home.component';
 import { CalendarComponent } from './component/calendar/calendar.component';
 import { CardComponent } from './component/card/card.component';
+import { SliderComponent } from './component/slider/slider.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { CardComponent } from './component/card/card.component';
     MenubarComponent,
     HomeComponent,
     CalendarComponent,
-    CardComponent
+    CardComponent,
+    SliderComponent
   ],
   imports: [
     BrowserModule,
