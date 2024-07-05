@@ -13,6 +13,9 @@ import {MatBadgeModule} from '@angular/material/badge';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
 import {MatSliderModule} from '@angular/material/slider';
+import {MatTableModule} from '@angular/material/table';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatSortModule} from '@angular/material/sort';
 
 @NgModule({
   exports: [
@@ -29,7 +32,10 @@ import {MatSliderModule} from '@angular/material/slider';
     MatBadgeModule,
     MatSidenavModule,
     MatListModule,
-    MatSliderModule
+    MatSliderModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   ]
 })
 export class MaterialModule{}

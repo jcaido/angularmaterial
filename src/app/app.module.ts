@@ -15,6 +15,8 @@ import { HomeComponent } from './home/home.component';
 import { CalendarComponent } from './component/calendar/calendar.component';
 import { CardComponent } from './component/card/card.component';
 import { SliderComponent } from './component/slider/slider.component';
+import { TableComponent } from './component/table/table.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -27,14 +29,16 @@ import { SliderComponent } from './component/slider/slider.component';
     HomeComponent,
     CalendarComponent,
     CardComponent,
-    SliderComponent
+    SliderComponent,
+    TableComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MaterialModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [
     provideAnimationsAsync()
