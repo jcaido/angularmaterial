@@ -1,7 +1,7 @@
 <mat-toolbar color="primary" class="mat-elevation-z8">
-  <button (click)="drawer.toggle()" mat-icon-button>
+  <!--<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/all.js" integrity="sha384-BtvRZcyfv4r0x/phJt9Y9HhnN5ur1Z+kZbKVgzVBAlQZX4jvAuImlIz+bG7TS00a" crossorigin="anonymous"></script><button (click)="drawer.toggle()" mat-icon-button>
     <mat-icon>menu</mat-icon>
-  </button>
+  </button>-->
   <span>Material UI Tutorial</span>
   <span class="example-spacer"></span>
   <button routerLink="home" mat-button>Home</button>
@@ -34,13 +34,15 @@
   <button routerLink="calendar" mat-button>Calendar</button>
   <button routerLink="slider" mat-button>Slider</button>
   <button routerLink="table" mat-button>Table</button>
+  <button routerLink="formdesign" mat-button>Form</button>
   <button mat-raised-button color="accent">Sign Up</button>
   <button mat-icon-button (click)="badgeVisibility()">
     <mat-icon matBadge="12" matBadgeSize="small" matBadgeColor="accent" [matBadgeHidden]="badVisible">notifications</mat-icon>
   </button>
 </mat-toolbar>
+<router-outlet></router-outlet>
 
-<mat-drawer-container>
+<!--<mat-drawer-container>
   <mat-drawer #drawer opened="true" mode="side">
     <mat-nav-list>
       <mat-list-item>
@@ -61,11 +63,6 @@
     </mat-nav-list>
   </mat-drawer>
   <mat-drawer-content>
-    <div style="text-align: center;">
-      <!--<app-datepicker></app-datepicker>-->
-      <!--<app-datepicker-in-line></app-datepicker-in-line>-->
-      <!--<app-calendar></app-calendar>-->
-    </div>
     <router-outlet></router-outlet>
   </mat-drawer-content>
-</mat-drawer-container>
+</mat-drawer-container>-->
