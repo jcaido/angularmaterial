@@ -3,6 +3,7 @@ import { MasterService } from '../../service/master.service';
 import { Customer } from '../../Model/Customer';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator } from '@angular/material/paginator';
+import { MatSort } from '@angular/material/sort';
 
 @Component({
   selector: 'app-table',
@@ -91,9 +92,7 @@ export class TableComponent {
 
   data: any = new MatTableDataSource<Customer>(this.listCustomer);
   @ViewChild(MatPaginator) paginator! :MatPaginator;
-  //data: any = new MatTableDataSource<Customer>(this.listCustomer);
-  //this.data.paginatior = this.paginatior;
-
+  @ViewChild(MatSort) sort! :MatSort;
 
   //constructor(private service :MasterService) {
   //  service.GetCustomer().subscribe(
@@ -107,6 +106,7 @@ export class TableComponent {
 
   ngAfterViewInit() {
     this.data.paginator = this.paginator;
+    this.data.sort = this.sort;
   }
 
 }
