@@ -1,7 +1,8 @@
-<h1 mat-dialog-title>Welcome to Cristóbal Rosa Tech</h1>
+<h1 mat-dialog-title>{{inputdata.title}}</h1>
 <div mat-dialog-content>
 
 </div>
 <div mat-dialog-actions>
-
+  <button mat-raised-button color="warn" (click)="closepopup()">Close</button>
+  <button mat-raised-button mat-dialog-close color="accent">Cancel</button>
 </div>

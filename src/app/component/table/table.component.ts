@@ -4,6 +4,8 @@ import { Customer } from '../../Model/Customer';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
+import { MatDialog } from '@angular/material/dialog';
+import { PopupComponent } from '../popup/popup.component';
 
 @Component({
   selector: 'app-table',
@@ -144,7 +146,7 @@ export class TableComponent {
   //    })
   //}
 
-  constructor(){}
+  constructor(private dialog :MatDialog){}
 
   ngAfterViewInit() {
     this.data.paginator = this.paginator;
@@ -154,6 +156,18 @@ export class TableComponent {
   Filterchange(dataText :Event) {
     const value = (dataText.target as HTMLInputElement).value;
     this.data.filter = value;
+  }
+
+  Openpopup() {
+    var _popup = this.dialog.open(PopupComponent, {
+      width: '60%',
+      data: {
+        title: 'User Edit'
+      }
+    });
+    _popup.afterClosed().subscribe(item => {
+      console.log(item);
+    })
   }
 
 }
