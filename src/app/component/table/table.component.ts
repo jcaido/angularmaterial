@@ -160,9 +160,11 @@ export class TableComponent {
 
   Openpopup() {
     var _popup = this.dialog.open(PopupComponent, {
-      width: '60%',
+      width: '40%',
+      enterAnimationDuration: '1000ms',
+      exitAnimationDuration: '1000ms',
       data: {
-        title: 'User Edit'
+        title: 'User Edit',
       }
     });
     _popup.afterClosed().subscribe(item => {
