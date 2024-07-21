@@ -87,7 +87,49 @@ export class TableComponent {
       email: "samantha@in.com",
       phone: "8989787867",
       active: "Active"
-    }
+    },
+    {
+      code: "11",
+      name: "ananthi",
+      email: "ananthi@in.com",
+      phone: "8989787867",
+      active: "Active"
+    },
+    {
+      code: "12",
+      name: "Ravi Kumar",
+      email: "rn@in.com",
+      phone: "7899000",
+      active: "Active"
+    },
+    {
+      code: "13",
+      name: "User",
+      email: "janesh@in.com",
+      phone: "8989787867",
+      active: "Active"
+    },
+    {
+      code: "14",
+      name: "Janesh",
+      email: "janesh@in.com",
+      phone: "8989787867",
+      active: "Active"
+    },
+    {
+      code: "15",
+      name: "kamlesh",
+      email: "kamlesh@in.com",
+      phone: "8989787867",
+      active: "In Active"
+    },
+    {
+      code: "16",
+      name: "kamlesh",
+      email: "kamlesh@in.com",
+      phone: "8989787867",
+      active: "In Active"
+    },
   ]
 
   data: any = new MatTableDataSource<Customer>(this.listCustomer);
