@@ -109,4 +109,9 @@ export class TableComponent {
     this.data.sort = this.sort;
   }
 
+  Filterchange(dataText :Event) {
+    const value = (dataText.target as HTMLInputElement).value;
+    this.data.filter = value;
+  }
+
 }

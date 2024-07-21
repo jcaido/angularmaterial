@@ -5,3 +5,8 @@ mat-card {
 button {
   margin: 2px;
 }
+
+th {
+  background-color: black !important;
+  color: white;
+}
