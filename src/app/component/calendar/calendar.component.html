@@ -1,4 +1,7 @@
 <mat-card class="demo-inline-calendar-card">
-  <mat-calendar [(selected)]="selected" [dateFilter]="dateFilter"></mat-calendar>
+  <mat-calendar (selectedChange)="onDateSelected($event)" [dateFilter]="dateFilter"></mat-calendar>
 </mat-card>
-<p>Selected Date: {{ seleccionarFecha() }}</p>
+@if (timeAvailables) {
+  <p>Selected Date: {{dateSelected}} </p>
+}
+

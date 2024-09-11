@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { provideNativeDateAdapter } from '@angular/material/core';
 
 @Component({
@@ -8,28 +8,29 @@ import { provideNativeDateAdapter } from '@angular/material/core';
   providers: [provideNativeDateAdapter()],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class CalendarComponent {
+export class CalendarComponent{
 
   selected: Date | null = null;
-  date: any;
+  dateSelected: any;
+  timeAvailables: boolean = false;
 
   disabledDates = [
-    new Date(2024, 5, 3),
-    new Date(2024, 5, 12),
-    new Date(2024, 5, 20),
+    new Date(2024, 8, 3),
+    new Date(2024, 8, 12),
+    new Date(2024, 8, 20),
     // agrega más fechas aquí
   ];
-
-  seleccionarFecha () {
-    this.date = this.selected?.toLocaleDateString();
-    return this.date;
-  }
 
   dateFilter = (date: Date | null): boolean => {
     if (!date) {
       return true;
     }
     const time = date.getTime();
-    return !this.disabledDates.some(d => d.getTime() === time);
+    return this.disabledDates.some(d => d.getTime() === time);
+  }
+
+  onDateSelected(selectedDate: Date | null): void {
+    this.dateSelected = selectedDate?.toLocaleDateString();
+    this.timeAvailables = true
   }
 }
