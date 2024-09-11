@@ -16,7 +16,6 @@ export class DatepickerInLineComponent {
   selectedDate: any;
 
   onSelect(event: any){
-    console.log(event);
     this.selectedDate = event.toLocaleDateString();
   }
 
